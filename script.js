@@ -1,4 +1,5 @@
 let botao=document.querySelector("#criar-tarefa")
+let botao2=document.querySelector("#apaga-tudo")
 let lista=document.querySelector("#lista-tarefas")
 let entrada=document.querySelector("#texto-tarefa")
 let ntarefas=document.querySelectorAll("ol")
@@ -27,4 +28,8 @@ corTarefa.addEventListener("dblclick", function(evento){
         evento.target.removeAttribute("class");
         evento.target.className="tarefas"
     }  
+})
+
+botao2.addEventListener("click", function(){
+    lista.innerHTML=""
 })
