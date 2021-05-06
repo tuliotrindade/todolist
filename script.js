@@ -1,6 +1,7 @@
-let botao=document.querySelector("#cria-tarefa")
+let botao=document.querySelector("#criar-tarefa")
 let lista=document.querySelector("#lista-tarefas")
 let entrada=document.querySelector("#texto-tarefa")
+let i=0;
 botao.addEventListener("click", function(){
     let tarefa=document.createElement("li");
     tarefa.id="tarefas"
@@ -8,4 +9,5 @@ botao.addEventListener("click", function(){
     tarefa.textContent=entrada.value;
     lista.appendChild(tarefa);
     entrada.value="";
+
 })
