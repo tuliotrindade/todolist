@@ -19,3 +19,12 @@ corTarefa.addEventListener("click", function(evento){
     evento.target.id="target"
 }     
 })
+corTarefa.addEventListener("dblclick", function(evento){
+    if(evento.target.className=="tarefas" && evento.target.className!=="completed"){
+    evento.target.className="tarefas completed";
+    }
+    else{
+        evento.target.removeAttribute("class");
+        evento.target.className="tarefas"
+    }  
+})
