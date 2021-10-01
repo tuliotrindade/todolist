@@ -6,6 +6,7 @@ let entrada = document.querySelector('#texto-tarefa');
 let ntarefas = document.querySelectorAll('li');
 let completos = document.getElementsByClassName('completed');
 let i = 0;
+
 botao.addEventListener('click', function () {
   let tarefa = document.createElement('li');
   tarefa.className = 'tarefas';
